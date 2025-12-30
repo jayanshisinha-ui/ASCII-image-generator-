@@ -1,9 +1,9 @@
-from PIL import Image,ImageDraw, ImageFont 
+from PIL import Image,ImageDraw
 import math
 
-character = "@%#*+=-:."
+characters = "@%#*+=-:."
 
-charArray = list(character)
+charArray = list(characters)
 Length = len(charArray)
 val = Length/256
 
@@ -37,3 +37,4 @@ for i in range(height):
     text_file.write('\n')    
 
 GeneratedImage.save('generated.png')
+
