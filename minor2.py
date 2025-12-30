@@ -14,7 +14,7 @@ Height = 18
 def getChar(inputInt):
     return charArray[math.floor(inputInt* val)]
     
-text_file =open("generated.txt","w")
+text_file =open("generated.png","w")
 image = Image.open("abhinavbindra.png")
 
 
@@ -36,6 +36,7 @@ for i in range(height):
 
     text_file.write('\n')    
 
-GeneratedImage.save('generated.txt')
+GeneratedImage.save('generated.png')
+
 
 
