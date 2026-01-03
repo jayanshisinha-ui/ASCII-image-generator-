@@ -47,4 +47,3 @@ Conclusion
 
 This ASCII Art Converter shows how computing is not limited to numbers and calculations — it can also be creative and artistic. By converting images into characters, the project bridges logic and imagination, giving users a new perspective on how technology can represent visual information.
 
-https://jayanshisinha-ui.github.io/ASCII-image-generator-/
