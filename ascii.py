@@ -12,7 +12,7 @@ def getChar(intensity):
     index = int(intensity * (length - 1) / 255)
     return charArray[index]
 
-with open("abhinavbindra_P3.ppm", "r") as file:
+with open("abhinavbindra.ppm", "r") as file:
     lines = file.readlines()
 
 data = []
@@ -46,4 +46,5 @@ with open("generated.txt", "w") as out:
         out.write("\n")
 
 print("ASCII Image Generated")
+
 
