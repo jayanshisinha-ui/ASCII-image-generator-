@@ -4,7 +4,6 @@ charArray = list(characters)
 length = len(charArray)
 
 def getChar(intensity):
-    # contrast stretch
     intensity = int((intensity - 40) * 255 / (220 - 40))
     if intensity < 0:
         intensity = 0
@@ -47,3 +46,4 @@ with open("generated.txt", "w") as out:
         out.write("\n")
 
 print("ASCII Image Generated")
+
