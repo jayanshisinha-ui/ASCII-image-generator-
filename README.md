@@ -37,7 +37,6 @@ Text characters are taller than they are wide, so scaling must account for font 
 5. File Handling in Python
 Reading image files
 Generating text output files
-Optionally saving ASCII art into a PNG
 
 6.Loops and Iterative Processing
 Nested loops are used to scan the image pixel-by-pixel
