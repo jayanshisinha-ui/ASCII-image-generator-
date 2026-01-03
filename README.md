@@ -4,15 +4,15 @@ ASCII Art is a visual technique that transforms images into patterns of text cha
 
 This project allows you to convert any image into ASCII manually using Python. The result can be printed on the terminal or saved as a text/PNG output.
 
-Overview
+## Overview
 
 ASCII Art Maker is a Python-based tool that transforms digital images into text-based artwork. Instead of using pixels, the program rebuilds the image using ASCII characters such as @, %, #, *, and . — each chosen based on how dark or light the original pixel is. This project demonstrates how images can be represented through mathematical processing and character mapping, giving a retro terminal-style visual effect. It is useful for learning image processing fundamentals, working with Python’s Pillow library, and exploring how computers can convert visual data into alternate formats like text.
 
-Objective 
+## Objective 
 
 The main objective of this project is to apply programming and digital graphics concepts to develop software that converts images into ASCII artwork. By using Python and mathematical transformations, the project aims to educate users about grayscale processing, data mapping, and how visual content can be expressed in a non-graphical format.
 
-Concept Used 
+## Concept Used 
 
 1. Digital Image Processing
 
@@ -42,32 +42,21 @@ Text characters are taller than they are wide, so scaling must account for font 
 Reading image files
 Generating text output files
 
-6.Loops and Iterative Processing
+6. Loops and Iterative Processing
 
 Nested loops are used to scan the image pixel-by-pixel
 Each pixel is evaluated and converted into a character
 
-Brief Explanation
+## Brief Explanation
 
 This program converts an image into ASCII art using basic file handling and loops. First, the image is provided in PPM (P3) format, which stores pixel color values as plain text. The code reads the image’s width, height, and RGB values from the file. To make the output readable, the image is scaled down by skipping pixels at fixed intervals. For each selected pixel, the RGB values are averaged to calculate a grayscale intensity. This intensity is then mapped to a corresponding ASCII character based on brightness, where darker pixels use darker symbols and lighter pixels use lighter symbols. Finally, the generated characters are written line by line into a text file, forming an ASCII representation of the original image.
-
-PPM to ASCII Art (Gradio UI)
-
+PPM to ASCII Art : 
 This project converts a **P3 PPM image** into ASCII art using grayscale intensity mapping.
-
-## How to Run
-1. Install dependencies:
-   pip install -r requirements.txt
-
-2. Run the app:
-   python app.py
-
-3. Upload a `.ppm` (P3) image and view ASCII output.
 
 ## Characters Used
 @ % # * + = - : .
 
-Conclusion
+## Conclusion
 
 This ASCII Art Converter shows how computing is not limited to numbers and calculations — it can also be creative and artistic. By converting images into characters, the project bridges logic and imagination, giving users a new perspective on how technology can represent visual information.
 
