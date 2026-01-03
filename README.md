@@ -15,10 +15,12 @@ The main objective of this project is to apply programming and digital graphics 
 Concept Used 
 
 1. Digital Image Processing
+
 Understanding how images are made of pixels (tiny color blocks)
 Accessing and manipulating pixel data using Python
 
 2. RGB to Grayscale Conversion
+   
 A mathematical formula is applied to convert colored pixels to grayscale:
 Gray = (R + G + B) / 3
 This simplifies color information into brightness values (0–255)
@@ -31,16 +33,29 @@ Lighter pixels → characters like . or :
 This mapping reconstructs the visual shape using text
 
 4. Resizing and Aspect Ratio Adjustment
+
 The image is resized so ASCII characters do not stretch or distort
 Text characters are taller than they are wide, so scaling must account for font proportions
 
 5. File Handling in Python
+
 Reading image files
 Generating text output files
 
 6.Loops and Iterative Processing
+
 Nested loops are used to scan the image pixel-by-pixel
 Each pixel is evaluated and converted into a character
+
+Brief Explanation
+
+This program converts an image into ASCII art using basic file handling and loops. First, the image is provided in PPM (P3) format, which stores pixel color values as plain text. The code reads the image’s width, height, and RGB values from the file. To make the output readable, the image is scaled down by skipping pixels at fixed intervals. For each selected pixel, the RGB values are averaged to calculate a grayscale intensity. This intensity is then mapped to a corresponding ASCII character based on brightness, where darker pixels use darker symbols and lighter pixels use lighter symbols. Finally, the generated characters are written line by line into a text file, forming an ASCII representation of the original image.
+
+## Image
+![Image](abhinavbindra.png)
+
+## Output 
+![Output](generated.txt)
 
 Conclusion
 
