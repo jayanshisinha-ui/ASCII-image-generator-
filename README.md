@@ -51,6 +51,21 @@ Brief Explanation
 
 This program converts an image into ASCII art using basic file handling and loops. First, the image is provided in PPM (P3) format, which stores pixel color values as plain text. The code reads the image’s width, height, and RGB values from the file. To make the output readable, the image is scaled down by skipping pixels at fixed intervals. For each selected pixel, the RGB values are averaged to calculate a grayscale intensity. This intensity is then mapped to a corresponding ASCII character based on brightness, where darker pixels use darker symbols and lighter pixels use lighter symbols. Finally, the generated characters are written line by line into a text file, forming an ASCII representation of the original image.
 
+PPM to ASCII Art (Gradio UI)
+
+This project converts a **P3 PPM image** into ASCII art using grayscale intensity mapping.
+
+## How to Run
+1. Install dependencies:
+   pip install -r requirements.txt
+
+2. Run the app:
+   python app.py
+
+3. Upload a `.ppm` (P3) image and view ASCII output.
+
+## Characters Used
+@ % # * + = - : .
 
 Conclusion
 
